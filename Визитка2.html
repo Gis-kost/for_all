@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Константин Витюков | GIS-аналитик</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2B5876;
+            --secondary: #4B6CB7;
+            --accent: #48B1BF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: var(--primary);
+            padding: 40px 0;
+            color: white;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .badges {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255,255,255,0.1);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-bottom: 25px;
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: var(--secondary);
+            color: white;
+            padding: 6px 15px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 20px;
+            transition: opacity 0.3s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Константин Витюков</h1>
+            <p>GIS-аналитик / Data Engineer</p>
+            <div class="badges">
+                <div class="badge">14+ лет опыта</div>
+                <div class="badge">Эксперт QGIS</div>
+                <div class="badge">Python & SQL</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>Ключевые навыки</h2>
+            <div class="skills">
+                <span class="skill">Пространственный анализ</span>
+                <span class="skill">Автоматизация процессов</span>
+                <span class="skill">PostgreSQL/PostGIS</span>
+                <span class="skill">Python (AI/ML)</span>
+                <span class="skill">Визуализация данных</span>
+                <span class="skill">Картография</span>
+                <span class="skill">Геообработка</span>
+                <span class="skill">Работа с Big Data</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Последние проекты</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Генплан Москвы</h3>
+                    <p>▸ Автоматизация 80% процессов анализа<br>
+                    ▸ Разработка 15+ картографических слоев<br>
+                    ▸ Интеграция с городскими ИС</p>
+                </div>
+                <div class="card">
+                    <h3>Мосводоканал</h3>
+                    <p>▸ Оптимизация работы геопортала<br>
+                    ▸ Обучение 50+ пользователей<br>
+                    ▸ Тестирование 20+ модулей</p>
+                </div>
+                <div class="card">
+                    <h3>Миграция данных</h3>
+                    <p>▸ Нормализация 20+ источников<br>
+                    ▸ Снижение ошибок на 45%<br>
+                    ▸ Ускорение загрузки на 30%</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Технологический стек</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>ГИС-инструменты</h3>
+                    <p>QGIS · MapInfo · PostGIS<br>
+                    MicroStation · ArcGIS · OSM</p>
+                </div>
+                <div class="card">
+                    <h3>Программирование</h3>
+                    <p>Python · SQL · JavaScript<br>
+                    Pandas · GeoPandas · GDAL</p>
+                </div>
+                <div class="card">
+                    <h3>Базы данных</h3>
+                    <p>PostgreSQL · SQLite<br>
+                    SpatiaLite · Oracle</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Москва · Готов к командировкам</p>
+            <p>✉️ <a href="mailto:vitukovka@gmail.com" style="color: var(--primary)">vitukovka@gmail.com</a></p>
+            <p>📱 +7 (903) 548-27-53</p>
+            <a href="#contact" class="btn">Обсудить проект</a>
+        </div>
+    </section>
+</body>
+</html>
