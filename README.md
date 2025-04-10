@@ -1,2 +1,2 @@
-# for_all
+# GIS-зарисовки
 for_all
